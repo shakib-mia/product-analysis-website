@@ -7,7 +7,7 @@ const Navigation = () => {
             <div>
                   <Navbar bg="light" expand="lg">
                         <Container className='d-flex justify-content-between'>
-                              <Navbar.Brand><Link to="/" className='text-dark text-decoration-none'>My Suitable Watches</Link></Navbar.Brand>
+                              <Navbar.Brand><Link to="/" className='text-dark text-decoration-none'>Suitable Watches</Link></Navbar.Brand>
 
                               <Navbar.Collapse id="basic-navbar-nav">
                                     <Nav className="ms-auto">
