@@ -1,0 +1,28 @@
+{
+      "reviews": [
+            {
+                  "id": 1,
+                  "name": "Athar Ali Khan",
+                  "review": "I have got a beautiful product that is unbelievable. It was wrapped with so cute wrapping paper. I am 100% satisfied.",
+                  "rating": "./ratings/5star.png"
+            },
+            {
+                  "id": 2,
+                  "name": "Shamim Ashraf Chowdhury",
+                  "review": "This is such a wonderful product that I will never forget. The delivery man was very friendly and funny but he did late to reach me",
+                  "rating": "./ratings/4star.png"
+            },
+            {
+                  "id": 3,
+                  "name": "Shakib Al Hassan",
+                  "review": "I have a wonderful experience with the watch.",
+                  "rating": "./ratings/5star.png"
+            },
+            {
+                  "id": 4,
+                  "name": "Abdullah Al Samad",
+                  "review": "Just in One sentence, It is the worst watch I have used.",
+                  "rating": "./ratings/2star.png"
+            }
+      ]
+}

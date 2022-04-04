@@ -13,6 +13,7 @@ const Navigation = () => {
                                     <Nav className="ms-auto">
                                           <Link className='text-decoration-none text-dark px-3 py-2' to="/">Home</Link>
                                           <Link className='text-decoration-none text-dark px-3 py-2' to="/blogs">Blogs</Link>
+                                          <Link className='text-decoration-none text-dark px-3 py-2' to="/dashboard">Dashboard</Link>
                                           <Link className='text-decoration-none text-dark px-3 py-2' to="/videos">Videos</Link>
                                           <Link className='text-decoration-none text-dark px-3 py-2' to="/login">Login</Link>
                                     </Nav>
