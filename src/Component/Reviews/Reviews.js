@@ -5,7 +5,6 @@ import ReviewCard from '../ReviewCard/ReviewCard';
 
 const Reviews = () => {
       const reviews = Custom('customerReview.json');
-      console.log(reviews)
 
       return (
             <Container>
