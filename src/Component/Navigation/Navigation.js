@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Navigation = () => {
       return (
-            <div>
+            <div className='sticky-top'>
                   <Navbar bg="light" expand="lg">
                         <Container className='d-flex justify-content-between'>
                               <Navbar.Brand><Link to="/" className='text-dark text-decoration-none'>Suitable Watches</Link></Navbar.Brand>

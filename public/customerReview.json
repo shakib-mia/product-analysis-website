@@ -23,6 +23,24 @@
                   "name": "Abdullah Al Samad",
                   "review": "Just in One sentence, It is the worst watch I have used.",
                   "rating": "./ratings/2star.png"
+            },
+            {
+                  "id": 5,
+                  "name": "Shahin Alam",
+                  "review": "Good Product.",
+                  "rating": "./ratings/5star.png"
+            },
+            {
+                  "id": 6,
+                  "name": "Rakibul Hasan",
+                  "review": "Good Product.",
+                  "rating": "./ratings/4star.png"
+            },
+            {
+                  "id": 7,
+                  "name": "Shakib Mia",
+                  "review": "Good Product.",
+                  "rating": "./ratings/5star.png"
             }
       ]
 }
