@@ -10,6 +10,8 @@ const CustomerReview = () => {
                   .then(data => getReviews(data.reviews))
       }, []);
 
+
+
       return (
             <div>
                   <h1 className='text-center'>Customer Review</h1>
