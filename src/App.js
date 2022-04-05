@@ -8,6 +8,7 @@ import ErrorPage from './Component/ErrorPage/ErrorPage';
 import Dashboard from './Component/Dashboard/Dashboard';
 import Reviews from './Component/Reviews/Reviews';
 import Login from './Component/Login/Login';
+import Blogs from './Component/Blogs/Blogs';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/dashboard' element={<Dashboard></Dashboard>}></Route>
         <Route path='/reviews' element={<Reviews></Reviews>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
       </Routes>
     </div>
   );
