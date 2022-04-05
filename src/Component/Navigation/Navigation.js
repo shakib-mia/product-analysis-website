@@ -12,11 +12,11 @@ const Navigation = () => {
 
                               <Navbar.Collapse id="basic-navbar-nav">
                                     <Nav className="ms-auto">
-                                          <NavLink className='text-decoration-none text-white px-3 py-2' to="/">Home</NavLink>
-                                          <NavLink className='text-decoration-none text-white px-3 py-2' to="/blogs">Blogs</NavLink>
-                                          <NavLink className='text-decoration-none text-white px-3 py-2' to="/dashboard">Dashboard</NavLink>
-                                          <NavLink className='text-decoration-none text-white px-3 py-2' to="/reviews">Reviews</NavLink>
-                                          <NavLink className='text-decoration-none text-white px-3 py-2' to="/login">Login</NavLink>
+                                          <NavLink className='text-decoration-none text-light px-3 py-2' to="/">Home</NavLink>
+                                          <NavLink className='text-decoration-none text-light px-3 py-2' to="/blogs">Blogs</NavLink>
+                                          <NavLink className='text-decoration-none text-light px-3 py-2' to="/dashboard">Dashboard</NavLink>
+                                          <NavLink className='text-decoration-none text-light px-3 py-2' to="/reviews">Reviews</NavLink>
+                                          <NavLink className='text-decoration-none text-light px-3 py-2' to="/login">Login</NavLink>
                                     </Nav>
                               </Navbar.Collapse>
                         </Container>
