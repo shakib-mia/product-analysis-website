@@ -1,28 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import Custom from '../Custom/Custom';
 import ReviewCard from '../ReviewCard/ReviewCard';
 
 const CustomerReview = () => {
-      const [reviews, getReviews] = useState([]);
-
-      useEffect(() => {
-            fetch('customerReview.json')
-                  .then(res => res.json())
-                  .then(data => getReviews(data.reviews))
-      }, []);
-
-
+      const reviews = Custom('customerReview.json');
 
       return (
-            <div>
-                  <h1 className='text-center'>Customer Review</h1>
-                  <div className='row row-cols-4 d-flex justify-content-center'>
-                        {
-                              reviews.slice(0, 6).map(review => <ReviewCard key={review.id} name={review.name} review={review.review} img={review.rating}></ReviewCard>)
-                        }
-                        <button className='btn btn-outline-success my-3'>Show All Reviews</button>
-                  </div>
+            <div className='row row-cols-4 mx-auto'>
+                  {reviews.slice(0, 3).map(review => <ReviewCard key={review.id} name={review.name} img={review.rating} review={review.review}></ReviewCard>)}
+
+                  <Link to="/reviews" className='btn btn-outline-primary mx-auto'>Show All Review</Link>
             </div>
-      );
+      )
 };
 
 export default CustomerReview;
