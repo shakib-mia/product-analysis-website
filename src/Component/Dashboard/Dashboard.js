@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import { LineChart, Line, CartesianGrid, XAxis, YAxis } from 'recharts';
+import { BarChart, Bar, Cell, LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const data = [
       {
@@ -44,18 +44,33 @@ const data = [
 const Dashboard = () => (
       <Container>
             <div className="d-flex justify-content-around">
-                  <LineChart width={500} height={300} data={data} margin={{ left: 15 }}>
+                  <LineChart width={500} height={300} data={data} margin={{ left: 15 }} className="mt-4">
                         <Line type="monotone" dataKey="investment" stroke="#8884d8" />
                         <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
                         <XAxis dataKey="month" />
                         <YAxis />
                   </LineChart>
-                  <LineChart width={500} height={300} data={data} margin={{ left: 50 }}>
-                        <Line type="monotone" dataKey="investment" stroke="#8884d8" />
-                        <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+
+                  <BarChart
+                        width={500}
+                        height={300}
+                        data={data}
+                        margin={{
+                              right: 30,
+                              left: 20,
+                              bottom: 5,
+                        }}
+                        className="mt-4"
+                  >
+                        <CartesianGrid strokeDasharray="3 3" />
                         <XAxis dataKey="month" />
                         <YAxis />
-                  </LineChart>
+                        <Tooltip />
+                        <Legend />
+                        <Bar dataKey="investment" fill="#8884d8" />
+                        <Bar dataKey="sell" fill="#DE4839" />
+                        <Bar dataKey="revenue" fill="#82ca9d" />
+                  </BarChart>
             </div>
       </Container>
 );
