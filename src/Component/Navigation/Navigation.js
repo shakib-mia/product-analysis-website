@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import './Nav.css'
 
 const Navigation = () => {
       return (
@@ -11,11 +12,11 @@ const Navigation = () => {
 
                               <Navbar.Collapse id="basic-navbar-nav">
                                     <Nav className="ms-auto">
-                                          <Link className='text-decoration-none text-white px-3 py-2' to="/">Home</Link>
-                                          <Link className='text-decoration-none text-white px-3 py-2' to="/blogs">Blogs</Link>
-                                          <Link className='text-decoration-none text-white px-3 py-2' to="/dashboard">Dashboard</Link>
-                                          <Link className='text-decoration-none text-white px-3 py-2' to="/reviews">Reviews</Link>
-                                          <Link className='text-decoration-none text-white px-3 py-2' to="/login">Login</Link>
+                                          <NavLink className='text-decoration-none text-white px-3 py-2' to="/">Home</NavLink>
+                                          <NavLink className='text-decoration-none text-white px-3 py-2' to="/blogs">Blogs</NavLink>
+                                          <NavLink className='text-decoration-none text-white px-3 py-2' to="/dashboard">Dashboard</NavLink>
+                                          <NavLink className='text-decoration-none text-white px-3 py-2' to="/reviews">Reviews</NavLink>
+                                          <NavLink className='text-decoration-none text-white px-3 py-2' to="/login">Login</NavLink>
                                     </Nav>
                               </Navbar.Collapse>
                         </Container>

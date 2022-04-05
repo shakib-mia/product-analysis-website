@@ -1,14 +1,16 @@
 import React from 'react';
 
 const ReviewCard = (props) => {
+      const { name, img, review } = props;
+
       return (
             <div className='card mx-2 my-2'>
                   <div className="card-body">
                         <h4 className="card-title">
-                              {props.name}
+                              {name}
                         </h4>
-                        <img src={props.img} alt="review" width={70} />
-                        <p>{props.review}</p>
+                        <img src={img} alt="review" width={70} />
+                        <p>{review}</p>
                   </div>
             </div>
       );
